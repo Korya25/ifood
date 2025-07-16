@@ -11,7 +11,7 @@ import 'package:ifood/features/profile/presentation/views/profile_view.dart';
 
 class AppRouter {
   static final GoRouter approuter = GoRouter(
-    initialLocation: AppRoutes.login,
+    initialLocation: AppRoutes.home,
     routes: [
       // auth
       GoRoute(
