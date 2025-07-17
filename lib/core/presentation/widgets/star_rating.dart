@@ -3,8 +3,9 @@ import 'package:flutter_screenutil/flutter_screenutil.dart';
 
 class StarRating extends StatelessWidget {
   final double rating;
+  final double? size;
 
-  const StarRating({super.key, required this.rating});
+  const StarRating({super.key, required this.rating, this.size});
 
   @override
   Widget build(BuildContext context) {
@@ -13,7 +14,7 @@ class StarRating extends StatelessWidget {
         return Icon(
           index < rating ? Icons.star : Icons.star_border,
           color: Colors.amber,
-          size: 12.sp,
+          size: size?? 12.sp,
         );
       }),
     );

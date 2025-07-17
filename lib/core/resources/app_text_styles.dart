@@ -56,9 +56,44 @@ class AppTextStyles {
     color: AppColors.textGreen,
   );
 
-    static final TextStyle inter14Black500 = _interFont(
+  static final TextStyle inter14Black500 = _interFont(
     fontSize: 14,
     fontWeight: FontWeight.w500,
     color: AppColors.textBlack,
+  );
+
+  static final TextStyle inter28BlackBold = _interFont(
+    fontSize: 28,
+    fontWeight: FontWeight.bold,
+    color: AppColors.textBlack,
+  );
+
+  static final TextStyle inter14Grey500 = _interFont(
+    fontSize: 14,
+    fontWeight: FontWeight.w500,
+    color: AppColors.textGrey,
+  );
+  static final TextStyle inter18Green600 = _interFont(
+    fontSize: 18,
+    fontWeight: FontWeight.w600,
+    color: AppColors.textGreen,
+  );
+
+  static final TextStyle inter12Blackw600 = _interFont(
+    fontSize: 12,
+    fontWeight: FontWeight.w600,
+    color: AppColors.textBlack,
+  );
+
+  static final TextStyle inter18Black600 = _interFont(
+    fontSize: 18,
+    fontWeight: FontWeight.w600,
+    color: AppColors.textBlack,
+  );
+
+  static final TextStyle inter18White600 = _interFont(
+    fontSize: 18,
+    fontWeight: FontWeight.w600,
+    color: AppColors.textWhite,
   );
 }

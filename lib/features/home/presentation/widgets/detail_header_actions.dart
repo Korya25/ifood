@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:go_router/go_router.dart';
 import 'package:ifood/core/constants/app_colors.dart';
 import 'package:ifood/core/presentation/widgets/favorite_button.dart';
 
@@ -11,7 +12,12 @@ class DetailHeaderActions extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
-        headerActionItem(icon: Icons.arrow_back_ios),
+        headerActionItem(
+          onTap: () {
+            context.pop();
+          },
+          icon: Icons.arrow_back_ios,
+        ),
         headerActionItem(
           widget: FavoriteButton(onFavoritePressed: () {}, isFavorite: false),
         ),
@@ -19,15 +25,24 @@ class DetailHeaderActions extends StatelessWidget {
     );
   }
 
-  Container headerActionItem({IconData? icon, Widget? widget}) {
+  Container headerActionItem({
+    VoidCallback? onTap,
+    IconData? icon,
+    Widget? widget,
+  }) {
     return Container(
-      height: 40.h,
-      width: 40.w,
+      height: 20.h,
+      width: 20.w,
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(10.r),
         color: AppColors.iconGreen,
       ),
-      child: widget ?? Icon(icon, color: AppColors.iconWhite, size: 20.sp),
+      child:
+          widget ??
+          GestureDetector(
+            onTap: onTap,
+            child: Icon(icon, color: AppColors.iconWhite, size: 20.sp),
+          ),
     );
   }
 }
