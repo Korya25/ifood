@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:go_router/go_router.dart';
+import 'package:ifood/core/resources/app_routes.dart';
 import 'package:ifood/core/resources/app_text_styles.dart';
 import 'package:ifood/core/presentation/widgets/custom_vertical_list.dart';
 import 'package:ifood/core/presentation/widgets/custom_horizontal_list.dart';
@@ -34,21 +36,26 @@ class HomeBody extends StatelessWidget {
           child: CustomVerticalList(
             itemCount: 20,
             itemBuilder: (BuildContext context, int index) {
-              return ProductCard(
-                imageUrl:
-                    'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyLCWEbWCyzRRiQoUBSLcY52FedzxjpJn2fA&s',
-                title: 'Donuts',
-                category: 'Snack',
-                originalPrice: 8.2,
-                discountedPrice: 6.4,
-                rating: 5.0,
-                isFavorite: true,
-                onFavoritePressed: () {
-                  print('Favorite pressed');
+              return GestureDetector(
+                onTap: () {
+                  context.pushNamed(AppRoutes.homeDetails);
                 },
-                onCartPressed: () {
-                  print('Cart pressed');
-                },
+                child: ProductCard(
+                  imageUrl:
+                      'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyLCWEbWCyzRRiQoUBSLcY52FedzxjpJn2fA&s',
+                  title: 'Donuts',
+                  category: 'Snack',
+                  originalPrice: 8.2,
+                  discountedPrice: 6.4,
+                  rating: 5.0,
+                  isFavorite: true,
+                  onFavoritePressed: () {
+                    print('Favorite pressed');
+                  },
+                  onCartPressed: () {
+                    print('Cart pressed');
+                  },
+                ),
               );
             },
           ),

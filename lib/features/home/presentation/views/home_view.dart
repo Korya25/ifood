@@ -10,12 +10,15 @@ class HomeView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       backgroundColor: AppColors.secondaryWhite,
-      body: CustomScrollView(
-        physics: BouncingScrollPhysics(),
-        slivers: [
-          SliverToBoxAdapter(child: HomeHeader()),
-          SliverToBoxAdapter(child: HomeBody()),
-        ],
+      body: GestureDetector(
+        onTap: () => FocusScope.of(context).requestFocus(FocusNode()),
+        behavior: HitTestBehavior.opaque,
+        child: CustomScrollView(
+          slivers: [
+            SliverToBoxAdapter(child: HomeHeader()),
+            SliverToBoxAdapter(child: HomeBody()),
+          ],
+        ),
       ),
     );
   }
