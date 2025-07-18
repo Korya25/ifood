@@ -20,7 +20,7 @@ class HomeDetails extends StatelessWidget {
           children: [
             DetailHeader(),
             Padding(
-              padding: EdgeInsets.symmetric(horizontal: 10.w),
+              padding: EdgeInsets.symmetric(horizontal: 16.w),
               child: DetailContent(),
             ),
             SimilarProducts(),
@@ -28,7 +28,7 @@ class HomeDetails extends StatelessWidget {
             GestureDetector(
               onTap: () {},
               child: Container(
-                margin: EdgeInsets.symmetric(),
+                margin: EdgeInsets.symmetric(horizontal: 30),
                 height: 0.08.sh,
                 decoration: BoxDecoration(
                   borderRadius: BorderRadius.circular(10.r),

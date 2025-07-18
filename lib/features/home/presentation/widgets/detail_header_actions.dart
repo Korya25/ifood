@@ -31,8 +31,8 @@ class DetailHeaderActions extends StatelessWidget {
     Widget? widget,
   }) {
     return Container(
-      height: 20.h,
-      width: 20.w,
+      height: 30.h,
+      width: 40.w,
       decoration: BoxDecoration(
         borderRadius: BorderRadius.circular(10.r),
         color: AppColors.iconGreen,

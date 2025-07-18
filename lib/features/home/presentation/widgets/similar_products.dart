@@ -15,7 +15,7 @@ class SimilarProducts extends StatelessWidget {
       mainAxisAlignment: MainAxisAlignment.start,
       children: [
         Padding(
-          padding: EdgeInsets.symmetric(horizontal: 10.w),
+          padding: EdgeInsets.symmetric(horizontal: 16.w),
           child: Text('Similar Products', style: AppTextStyles.inter18Black600),
         ),
         CustomHorizontalList(

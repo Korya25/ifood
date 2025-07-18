@@ -8,7 +8,7 @@ class SimilarProductsCard extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      margin: EdgeInsets.symmetric(horizontal: 10.w),
+      margin: EdgeInsets.symmetric(horizontal: 16.w),
       width: 0.28.sw,
       child: ImageWithShimmer(
         imageUrl:
