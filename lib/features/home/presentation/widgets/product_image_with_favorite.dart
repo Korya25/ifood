@@ -33,7 +33,10 @@ class ProductImageWithFavorite extends StatelessWidget {
         Positioned(
           right: 4.w,
           top: 4.h,
-          child: FavoriteButton(onFavoritePressed: onFavoritePressed, isFavorite: isFavorite),
+          child: FavoriteButton(
+            onFavoritePressed: onFavoritePressed,
+            isFavorite: isFavorite,
+          ),
         ),
       ],
     );

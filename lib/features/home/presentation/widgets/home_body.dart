@@ -34,7 +34,7 @@ class HomeBody extends StatelessWidget {
         Padding(
           padding: EdgeInsets.symmetric(horizontal: 16.w),
           child: CustomVerticalList(
-            itemCount: 20,
+            itemCount: 1,
             itemBuilder: (BuildContext context, int index) {
               return GestureDetector(
                 onTap: () {

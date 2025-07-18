@@ -51,10 +51,13 @@ class ProductCard extends StatelessWidget {
           Row(
             spacing: 16.w,
             children: [
-              ProductImageWithFavorite(
-                imageUrl: imageUrl,
-                isFavorite: isFavorite,
-                onFavoritePressed: onFavoritePressed,
+              Hero(
+                tag: imageUrl,
+                child: ProductImageWithFavorite(
+                  imageUrl: imageUrl,
+                  isFavorite: isFavorite,
+                  onFavoritePressed: onFavoritePressed,
+                ),
               ),
               Flexible(
                 child: ProductInfo(

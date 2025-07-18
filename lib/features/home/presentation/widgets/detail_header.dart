@@ -10,11 +10,14 @@ class DetailHeader extends StatelessWidget {
   Widget build(BuildContext context) {
     return Stack(
       children: [
-        ImageWithShimmer(
-          imageUrl:
-              'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyLCWEbWCyzRRiQoUBSLcY52FedzxjpJn2fA&s',
-          height: 0.3.sh,
-          width: double.infinity,
+        Hero(
+          tag:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyLCWEbWCyzRRiQoUBSLcY52FedzxjpJn2fA&s' ,
+          child: ImageWithShimmer(
+            imageUrl:
+                'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyLCWEbWCyzRRiQoUBSLcY52FedzxjpJn2fA&s',
+            height: 0.3.sh,
+            width: double.infinity,
+          ),
         ),
         Padding(
           padding: EdgeInsets.symmetric(horizontal: 10.w, vertical: 20.h),
