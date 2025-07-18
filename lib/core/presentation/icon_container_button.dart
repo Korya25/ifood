@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_animate/flutter_animate.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:ifood/core/constants/app_colors.dart';
 
@@ -38,6 +39,6 @@ class IconContainerButton extends StatelessWidget {
         alignment: Alignment.center,
         child: child,
       ),
-    );
+    ).animate().fadeIn(delay: 100.ms);
   }
 }

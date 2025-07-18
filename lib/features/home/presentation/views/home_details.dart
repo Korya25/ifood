@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:flutter_animate/flutter_animate.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:ifood/features/home/presentation/widgets/detail_body.dart';
 import 'package:ifood/features/home/presentation/widgets/detail_header.dart';
@@ -19,7 +20,7 @@ class HomeDetailsView extends StatelessWidget {
             DetailHeader(),
             Padding(
               padding: EdgeInsets.symmetric(horizontal: 16.w),
-              child: DetailContent(),
+              child: DetailContent().animate().fadeIn(delay: 150.ms),
             ),
             SimilarProducts(),
 

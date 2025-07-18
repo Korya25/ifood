@@ -25,7 +25,10 @@ class DetailCondtionAction extends StatelessWidget {
       spacing: 10.w,
       children: [
         SvgPicture.asset(svg),
-        Text(title, style: AppTextStyles.inter12Blackw600),
+        Text(
+          title,
+          style: AppTextStyles.inter12Blackw600,
+        ),
       ],
     );
   }
