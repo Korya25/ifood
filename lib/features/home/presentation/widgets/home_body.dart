@@ -50,10 +50,10 @@ class HomeBody extends StatelessWidget {
                   rating: 5.0,
                   isFavorite: true,
                   onFavoritePressed: () {
-                    print('Favorite pressed');
+                    //print('Favorite pressed');
                   },
                   onCartPressed: () {
-                    print('Cart pressed');
+                 //   print('Cart pressed');
                   },
                 ),
               );

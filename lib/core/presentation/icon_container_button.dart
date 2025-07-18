@@ -16,7 +16,7 @@ class IconContainerButton extends StatelessWidget {
     required this.child,
     this.onTap,
     this.height = 30,
-    this.width = 30,
+    this.width = 35,
     this.backgroundColor = AppColors.continerBackgroundIcon,
     this.borderRadius = const BorderRadius.all(Radius.circular(10)),
     this.padding,
