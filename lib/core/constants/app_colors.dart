@@ -4,6 +4,7 @@ class AppColors {
   static const Color primaryGreen = Color(0xff0D8754);
   static const Color secondaryWhite = Color.fromARGB(239, 255, 255, 255);
   static const Color fillTextField = Color(0xffE9E8E8);
+  static const Color productCard =  Color.fromARGB(7, 0, 0, 0);
 
   // text
   static const Color textWhite = Color(0xffFFFFFF);
@@ -17,7 +18,7 @@ class AppColors {
   static const Color iconGreen = primaryGreen;
   static const Color iconredAccent = Colors.red;
   static const Color iconDisable = Color(0xffDBDBDB);
-  static const Color continerBackgroundIcon = Color(0xffD9D9D9);
+  static const Color continerBackgroundIcon = Color.fromARGB(31, 0, 0, 0);
 
   //  Shimmer Colors
   static const Color shimmerBase = Color(0xFF1A1A1A);

@@ -16,7 +16,7 @@ class HomeDetailsView extends StatelessWidget {
         child: Column(
           crossAxisAlignment: CrossAxisAlignment.start,
           mainAxisAlignment: MainAxisAlignment.start,
-          spacing: 10.h,
+          spacing: 8.h,
           children: [
             DetailHeader(),
             Padding(

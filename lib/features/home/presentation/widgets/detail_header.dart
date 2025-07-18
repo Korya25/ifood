@@ -17,7 +17,7 @@ class DetailHeader extends StatelessWidget {
             enableZoom: true,
             imageUrl:
                 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyLCWEbWCyzRRiQoUBSLcY52FedzxjpJn2fA&s',
-            height: 0.3.sh,
+            height: 0.4.sh,
             width: double.infinity,
           ),
         ),

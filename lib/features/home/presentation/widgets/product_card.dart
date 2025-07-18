@@ -2,6 +2,7 @@
 
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:ifood/core/constants/app_colors.dart';
 import 'package:ifood/core/presentation/widgets/cart_buttton.dart';
 import 'package:ifood/features/home/presentation/widgets/product_image_with_favorite.dart';
 import 'package:ifood/features/home/presentation/widgets/product_info.dart';
@@ -37,7 +38,7 @@ class ProductCard extends StatelessWidget {
         borderRadius: BorderRadius.circular(12.r),
         boxShadow: [
           BoxShadow(
-            color: const Color.fromARGB(7, 0, 0, 0),
+            color: AppColors.productCard,
             spreadRadius: 1,
             blurRadius: 8,
             offset: const Offset(0, 2),

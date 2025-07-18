@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
 import 'package:go_router/go_router.dart';
 import 'package:ifood/core/constants/app_colors.dart';
+import 'package:ifood/core/presentation/icon_container_button.dart';
 import 'package:ifood/core/presentation/widgets/favorite_button.dart';
 
 class DetailHeaderActions extends StatelessWidget {
@@ -12,37 +13,38 @@ class DetailHeaderActions extends StatelessWidget {
     return Row(
       mainAxisAlignment: MainAxisAlignment.spaceBetween,
       children: [
-        headerActionItem(
+        IconContainerButton(
           onTap: () {
             context.pop();
           },
-          icon: Icons.arrow_back_ios,
+
+          child: Icon(Icons.arrow_back_ios_new,color: AppColors.iconWhite,),
         ),
-        headerActionItem(
-          widget: FavoriteButton(onFavoritePressed: () {}, isFavorite: false),
+        IconContainerButton(
+          child: FavoriteButton(onFavoritePressed: () {}, isFavorite: false),
         ),
       ],
     );
   }
+}
 
-  Container headerActionItem({
-    VoidCallback? onTap,
-    IconData? icon,
-    Widget? widget,
-  }) {
-    return Container(
-      height: 30.h,
-      width: 40.w,
-      decoration: BoxDecoration(
-        borderRadius: BorderRadius.circular(10.r),
-        color: AppColors.iconGreen,
-      ),
-      child:
-          widget ??
-          GestureDetector(
-            onTap: onTap,
-            child: Icon(icon, color: AppColors.iconWhite, size: 20.sp),
-          ),
+class HeaderActionItem extends StatelessWidget {
+  final VoidCallback? onTap;
+  final IconData? icon;
+  final Widget? child;
+
+  const HeaderActionItem({super.key, this.onTap, this.icon, this.child});
+
+  @override
+  Widget build(BuildContext context) {
+    final content =
+        child ?? Icon(icon, size: 20.sp, color: AppColors.iconWhite);
+
+    return IconContainerButton(
+      onTap: onTap,
+      backgroundColor: AppColors.continerBackgroundIcon,
+      borderRadius: BorderRadius.circular(10.r),
+      child: content,
     );
   }
 }

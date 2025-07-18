@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_screenutil/flutter_screenutil.dart';
+import 'package:ifood/core/presentation/icon_container_button.dart';
 import 'package:ifood/core/presentation/widgets/image_with_shimmer.dart';
 import 'package:ifood/core/presentation/widgets/favorite_button.dart';
 
@@ -33,9 +34,11 @@ class ProductImageWithFavorite extends StatelessWidget {
         Positioned(
           right: 4.w,
           top: 4.h,
-          child: FavoriteButton(
-            onFavoritePressed: onFavoritePressed,
-            isFavorite: isFavorite,
+          child: IconContainerButton(
+            child: FavoriteButton(
+              onFavoritePressed: onFavoritePressed,
+              isFavorite: isFavorite,
+            ),
           ),
         ),
       ],
