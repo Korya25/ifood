@@ -73,7 +73,9 @@ class ProductCard extends StatelessWidget {
           Positioned(
             bottom: 0,
             right: 0,
-            child: CartButton(onPressed: onCartPressed),
+            child: CartButton(
+              
+              onPressed: onCartPressed),
           ),
         ],
       ),

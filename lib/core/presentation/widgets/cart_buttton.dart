@@ -11,7 +11,7 @@ class CartButton extends StatelessWidget {
   Widget build(BuildContext context) {
     return GestureDetector(
       onTap: onPressed,
-      child: Icon(Icons.shopping_cart, color: AppColors.iconGreen, size: 18.sp),
+      child: Icon(Icons.shopping_cart, color: AppColors.iconGreen, size: 22.sp),
     );
   }
 }
