@@ -34,11 +34,10 @@ class ProductCard extends StatelessWidget {
   Widget build(BuildContext context) {
     return Container(
       decoration: BoxDecoration(
-        color: Colors.white,
         borderRadius: BorderRadius.circular(12.r),
         boxShadow: [
           BoxShadow(
-            color: Colors.grey.withOpacity(0.1),
+            color: const Color.fromARGB(7, 0, 0, 0),
             spreadRadius: 1,
             blurRadius: 8,
             offset: const Offset(0, 2),
@@ -73,9 +72,7 @@ class ProductCard extends StatelessWidget {
           Positioned(
             bottom: 0,
             right: 0,
-            child: CartButton(
-              
-              onPressed: onCartPressed),
+            child: CartButton(onPressed: onCartPressed),
           ),
         ],
       ),
