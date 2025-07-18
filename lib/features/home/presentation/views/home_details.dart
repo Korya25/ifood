@@ -6,8 +6,8 @@ import 'package:ifood/features/home/presentation/widgets/detail_body.dart';
 import 'package:ifood/features/home/presentation/widgets/detail_header.dart';
 import 'package:ifood/features/home/presentation/widgets/similar_products.dart';
 
-class HomeDetails extends StatelessWidget {
-  const HomeDetails({super.key});
+class HomeDetailsView extends StatelessWidget {
+  const HomeDetailsView({super.key});
 
   @override
   Widget build(BuildContext context) {
