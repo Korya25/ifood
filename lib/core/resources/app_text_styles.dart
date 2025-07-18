@@ -21,8 +21,8 @@ class AppTextStyles {
     fontWeight: FontWeight.w500,
     color: AppColors.textWhite,
   );
-  static final TextStyle inter28WhiteBold = _interFont(
-    fontSize: 28,
+  static final TextStyle inter22WhiteBold = _interFont(
+    fontSize: 22,
     fontWeight: FontWeight.bold,
     color: AppColors.textWhite,
   );

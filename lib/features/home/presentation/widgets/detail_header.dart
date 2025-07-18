@@ -11,8 +11,10 @@ class DetailHeader extends StatelessWidget {
     return Stack(
       children: [
         Hero(
-          tag:'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyLCWEbWCyzRRiQoUBSLcY52FedzxjpJn2fA&s' ,
+          tag:
+              'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyLCWEbWCyzRRiQoUBSLcY52FedzxjpJn2fA&s',
           child: ImageWithShimmer(
+            enableZoom: true,
             imageUrl:
                 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTyLCWEbWCyzRRiQoUBSLcY52FedzxjpJn2fA&s',
             height: 0.3.sh,

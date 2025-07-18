@@ -10,9 +10,9 @@ class HomeHeader extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Container(
-      height: 0.27.sh,
+      height: 0.23.sh,
       decoration: headerBackground(),
-      padding: EdgeInsets.all(20),
+      padding: EdgeInsets.symmetric(horizontal: 25.w, vertical: 16.h),
 
       child: HomeHeaderContent(
         imageUrl:
